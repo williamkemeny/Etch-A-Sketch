@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sketch</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <header><h1>Etch-A-Sketch</h1></header>
+      <section>
+        <div class="board"></div>
+        <div class="buttons">
+          <button
+            class="button-4"
+            role="button"
+            onclick="changeColour('black')"
+          >
+            Black
+          </button>
+          <button
+            class="button-4"
+            role="button"
+            onclick="changeColour('White')"
+          >
+            Eraser
+          </button>
+          <button class="button-4" role="button" onclick="changeColour('grey')">
+            Grey
+          </button>
+          <button
+            class="button-4"
+            role="button"
+            onclick="changeColour('Random')"
+          >
+            Random
+          </button>
+          <button class="button-4" role="button" onclick="resetGrid()">
+            Reset
+          </button>
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Size of Grid"
+            size="5"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button class="button-4" role="button">Set Grid</button>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
